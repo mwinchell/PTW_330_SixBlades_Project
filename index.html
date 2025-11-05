@@ -9,7 +9,8 @@
 <body>
 
     <!-- Quick links to easily access other pages of the website 
-     Can make this into a proper menu later -->
+     Can make this into a proper menu later
+     Active class? -->
     <a class="active" href="index.html">Home</a>
     <a href="docsascode.html">Docs as Code</a>
     <a href="githubexercises.html">GitHub Exercises</a>
@@ -21,15 +22,79 @@
 
     <h1>Introduction</h1>
 
+    <!-- Some of the content was added for testing with CSS styles and other features. 
+     To make things easier, I will implement the entirety of the introduction page and small
+     sections of the other pages. Code for each paragraph will be included, but withough content.
+     Images that are ready to go will be implemented in the same spot as on our draft document. -->
+
     <h2>Where You Are</h2>
+
+        <p>Right now, you may find your documentation scattered across multiple tools, making it hard to track or trust. 
+            With Docs as Code, you’ll move toward a consistent, reliable process that your whole team can follow. 
+            Many companies look to Docs as Code via GitHub when they have cross departmental collaboration. 
+            For example, technical writers and software developers may both contribute to company documents such as work instructions or process guides. 
+            When multiple people work on company documents and update them consistently, content can easily get lost and duplicated. 
+            Teams may lose track of the most recent update and waste time and energy in search of valuable information—time and energy that could be steered toward a deadline or project. 
+            Traditional tools like Microsoft Word, Google Docs, or SharePoint may work for small projects or simple storage, but they are not designed to 
+            provide a single, authoritative source of truth for large, collaborative documentation efforts. 
+            Therefore, implementing GitHub may meet the needs of software developers and writers by keeping content aligned across teams.</p>
+
+        <p>If you are unfamiliar with GitHub, this guide will provide a brief introduction. But before that, it is important to clarify who this resource is intended for.</p>
+
+        <p>This guide is written for people who are:</p>
+            <ul>
+                <li>Seeking a way to store documents and code in one shared, accessible location</li>
+                <li>Wanting a clear version history of all changes</li>
+                <li>Working with documents that serve dozens—or even hundreds—of users across departments</li>
+                <li>Responsible for managing or organizing company documentation</li>
+                <li>Looking to condense and centralize scattered files</li>
+                <li>Frustrated by valuable information being lost in different platforms</li>
+                <li>Spending more time searching for documents than completing projects</li>
+            </ul>
 
     <h2>Brief Explanation of Docs as Code</h2>
 
+            <p>Docs as Code is an approach that treats documentation like software, 
+                using the same tools and processes that developers use for code. 
+                Writers store content in plain-text formats such as Markdown and manage it in version control systems like Git. 
+                This allows teams to track changes, collaborate through pull requests, and review edits just as they would with source code. 
+                Automated workflows, or CI/CD pipelines, can build and publish the documentation whenever updates are approved. 
+                The result is a transparent, efficient, and integrated process where documentation evolves in sync with the software it describes.</p>
+
     <h2>Brief Explanation of Version Control: Git/GitHub</h2>
+
+            <p>Git is a version control system that tracks changes to files, allowing multiple people to work on the same project without losing progress or overwriting each other’s work. 
+                It records a complete history of edits so users can review, revert, or branch off from any point in time. 
+                GitHub is an online platform that hosts Git repositories, making it easier for teams to share projects, collaborate, and manage contributions. 
+                It adds features like pull requests, issue tracking, and code reviews to streamline collaboration. 
+                Together, Git and GitHub provide a powerful foundation for teamwork, transparency, and versioned control in both software and documentation projects.</p>
 
     <h2>Brief Explanation of CI/CD Pipeline</h2>
 
+            <p>In the Docs as Code model, a CI/CD pipeline automates the building, testing, and publishing of documentation. 
+                When a writer or developer makes a change, the pipeline automatically checks for issues like broken links, formatting errors, or build failures. 
+                If the tests pass, the system compiles the files into a static site using tools such as MkDocs, Sphinx, or Jekyll. 
+                Once approved, the pipeline deploys the updated documentation to a live environment, such as GitHub Pages or Netlify. 
+                This automation ensures that documentation stays accurate, consistent, and always in sync with the latest code changes.</p>
+
     <h2>Where You'll End Up</h2>
+
+            <p>By the end of this guide, you should be able to transfer your company’s documents into a centralized GitHub space that supports both writers and software developers. 
+                While GitHub takes some time to learn, it provides important benefits: 
+                a complete version history, automated checks, and a consistent workflow that reduces errors.</p>
+
+            <p>This guide includes exercises to help you practice and build confidence with Docs as Code. 
+                If your team chooses to adopt this approach, you will gain a single, 
+                reliable place where all departments can access the same documents, 
+                see the full history of changes, and avoid confusion about the most recent version. 
+                The goal is to expedite the delivery of your company’s projects. </p>
+
+            <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Introduction%20Where%20You%20Are%20vs%20Where%20Youll%20Be.png?raw=true" alt="Where You Are vs Where You'll Be">
+
+    <!-- I thought it might be good to add a next button on each page. 
+     Thought that might improve the website flow?-->        
+
+    <p>Next, <a href="docsascode.html">Docs as Code Explanation and Implementation</a></p>
 
 </body>
 </html>
