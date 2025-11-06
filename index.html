@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Quick links to easily access other pages of the website 
+    <!-- Links to the other website pages for easy navigation.
      Can make this into a proper menu later
      Active class? -->
     <a class="active" href="index.html">Home</a>
@@ -18,16 +18,35 @@
     <a href="resources.html">Resources</a>
     <a href="glossary.html">Glossary</a>
 
+    <!-- Quick links for navigating through the different parts of the article.
+     Goal is to make it easier for people to find the desired information quickly.
+     Maybe this could be a side menu or something?
+     We might also be able to remove the #C_ from website page title, but still 
+     researching that option. -->
+
+    <nav>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#C1">Where You Are</a></li>
+            <li><a href="#C2">Brief Explanation of Docs as Code</a></li>
+            <li><a href="#C3">Brief Explanation of Version Control: Git/GitHub</a></li>
+            <li><a href="#C4">Brief Explanation of CI/CD Pipeline</a></li>
+            <li><a href="#C5">Where You'll End Up</a></li>
+        </ul>
+    </nav>
+
      <!-- If we decide not to use the glossary section we can comment it out? -->
 
     <h1>Introduction</h1>
+
+    <!-- Not entirely sure we need an Introduction heading. Maybe "Home" instead?-->
 
     <!-- Some of the content was added for testing with CSS styles and other features. 
      To make things easier, I will implement the entirety of the introduction page and small
      sections of the other pages. Code for each paragraph will be included, but withough content.
      Images that are ready to go will be implemented in the same spot as on our draft document. -->
 
-    <h2>Where You Are</h2>
+    <h2 id="C1">Where You Are</h2>
 
         <p>Right now, you may find your documentation scattered across multiple tools, making it hard to track or trust. 
             With Docs as Code, you’ll move toward a consistent, reliable process that your whole team can follow. 
@@ -52,7 +71,7 @@
                 <li>Spending more time searching for documents than completing projects</li>
             </ul>
 
-    <h2>Brief Explanation of Docs as Code</h2>
+    <h2 id="C2">Brief Explanation of Docs as Code</h2>
 
             <p>Docs as Code is an approach that treats documentation like software, 
                 using the same tools and processes that developers use for code. 
@@ -61,7 +80,7 @@
                 Automated workflows, or CI/CD pipelines, can build and publish the documentation whenever updates are approved. 
                 The result is a transparent, efficient, and integrated process where documentation evolves in sync with the software it describes.</p>
 
-    <h2>Brief Explanation of Version Control: Git/GitHub</h2>
+    <h2 id="C3">Brief Explanation of Version Control: Git/GitHub</h2>
 
             <p>Git is a version control system that tracks changes to files, allowing multiple people to work on the same project without losing progress or overwriting each other’s work. 
                 It records a complete history of edits so users can review, revert, or branch off from any point in time. 
@@ -69,7 +88,7 @@
                 It adds features like pull requests, issue tracking, and code reviews to streamline collaboration. 
                 Together, Git and GitHub provide a powerful foundation for teamwork, transparency, and versioned control in both software and documentation projects.</p>
 
-    <h2>Brief Explanation of CI/CD Pipeline</h2>
+    <h2 id="C4">Brief Explanation of CI/CD Pipeline</h2>
 
             <p>In the Docs as Code model, a CI/CD pipeline automates the building, testing, and publishing of documentation. 
                 When a writer or developer makes a change, the pipeline automatically checks for issues like broken links, formatting errors, or build failures. 
@@ -77,7 +96,7 @@
                 Once approved, the pipeline deploys the updated documentation to a live environment, such as GitHub Pages or Netlify. 
                 This automation ensures that documentation stays accurate, consistent, and always in sync with the latest code changes.</p>
 
-    <h2>Where You'll End Up</h2>
+    <h2 id="C5">Where You'll End Up</h2>
 
             <p>By the end of this guide, you should be able to transfer your company’s documents into a centralized GitHub space that supports both writers and software developers. 
                 While GitHub takes some time to learn, it provides important benefits: 
