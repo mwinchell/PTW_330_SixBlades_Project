@@ -298,13 +298,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--space-6) 0; o
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 /* 8) Generator hooks (optional) */
-/* MkDocs Material examples */
-.md-content { /* content container */ }
-.md-nav__item .md-nav__link[aria-current="page"] { font-weight: 700; }
-
-/* Docusaurus examples */
-.theme-doc-markdown { /* wrapper for doc content */ }
-.table-of-contents__link--active { font-weight: 700; }
 
 /* 9) Reduced motion */
 @media (prefers-reduced-motion: reduce) {
