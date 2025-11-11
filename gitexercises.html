@@ -10,240 +10,310 @@
 </head>
 
 <body class="article">
+    <nav style="width:100%;height:76px;
+    background:linear-gradient(135deg, #2ED2C9 0%, #2697B2 100%); 
+padding:0.5em 0 0.5em 0.5em;box-sizing:border-box;
+position:fixed;top:0;left:0;z-index:100;">
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="docsascode.html">Docs as Code</a>
-        <a href="githubexercises.html">GitHub Exercises</a>
-        <a class="active" href="gitexercises.html">Git Exercises</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html">Glossary</a>
+
+        <!-- LEFT NAV -->
+        <!-- TOP NAV COLOR-->
+        <div class="side-fixed-column left-fixed-column"
+            style="position: absolute; top: 76px; left: 0px; width: 220px; 
+            background: linear-gradient(135deg, #2ED2C9 0%, #2697B2 100%); 
+            z-index: 98; display: flex; align-items: flex-start; justify-content: center; box-shadow: rgba(118, 75, 162, 0.07) 2px 0px 8px; height: 304px;">
+
+            <div style="font-size:1.1em;
+            color:#764ba2;
+            font-weight:bold;text-align:left;padding:2em 1em 2em 1em;">
+                <p class="column"><a class="active" href="index.html">Home</a></p>
+                <p class="column"><a href="docsascode.html">Docs as Code</a></p>
+                <p class="column"><a href="githubexercises.html">GitHub Exercises</a></p>
+                <p class="column"><a href="gitexercises.html">Git Exercises</a></p>
+                <p class="column"><a href="resources.html">Resources</a></p>
+                <p class="column"><a href="glossary.html">Glossary</a></p>
+            </div>
+        </div>
+
+        <!-- TOP BAR -->
+        <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+            <div style="display:inline-flex;align-items:center;">
+                <img src="Images/logo.png" alt="Logo"
+                    style="height:50px;width:50px;vertical-align:middle;margin-right:1em;">
+                <span style="color:#fff;text-decoration:none;font-weight:bold;font-size:1.3em;">Six Blades
+                    Solutions</span>
+            </div>
+            <span style="color: #fff;text-decoration:none;font-weight:bold;font-size:1.3em;text-align:right;">Students.
+                Coders. Creators.</span>
+        </div>
     </nav>
+    <br><br><br><br><br>
+    <div style="margin-left:220px;margin-right:220px;">
+        <div id="header">
+            <!-- Hamburger button -->
+            <button class="nav-toggle-btn" id="openNavBtn" title="Open Navigation"
+                aria-label="Open Navigation">☰</button>
 
-    <nav>
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="#C1">What is Git?</a></li>
-            <li><a href="#C2">Why Should I Use Git?</a></li>
-            <li><a href="#C3">Important Terms</a></li>
-            <li><a href="#C4">Git vs. GitHub</a></li>
-            <li><a href="#C5">Git Exercises</a></li>
-            <li><a href="#C6">Exercise 1: Create a Practice Folder</a></li>
-            <li><a href="#C7">Exercise 2: Create a Practice File</a></li>
-            <li><a href="#C8">Exercise 3: Changing a File</a></li>
-            <li><a href="#C9">Exercise 4: Create a Branch</a></li>
-            <li><a href="#C10">Exercise 5: Merging Branches</a></li>
-            <li><a href="#C11">Exercise 6: Revise in Markdown Editor</a></li>
-            <li><a href="#C12">Exercise 7: View Commit History</a></li>
-            <li><a href="#C13">Exercise 8: Revising a Commit Message</a></li>
-            <li><a href="#C14">Exercise 9: Delete a Commit</a></li>
-        </ul>
-    </nav>
+            <!-- Side drawer -->
+            <div class="side-drawer" id="sideDrawer">
+                <button class="nav-toggle-btn" id="closeNavBtn" title="Close Navigation"
+                    aria-label="Close Navigation">☰</button>
+                <!-- Drawer content goes here -->
+                <div style="margin-top:2em;">
+                    <strong>Table of Contents</strong><br>
+                    <br>
+                    <p class="column"><a class="active" href="index.html">Home</a></p>
+                    <p class="column"><a href="docsascode.html">Docs as Code</a></p>
+                    <p class="column"><a href="githubexercises.html">GitHub Exercises</a></p>
+                    <p class="column"><a href="gitexercises.html">Git Exercises</a></p>
+                    <p class="column"><a href="resources.html">Resources</a></p>
+                    <p class="column"><a href="glossary.html">Glossary</a></p>
+                    <hr>
+                </div>
+            </div>
 
-    <!-- Slightly modified headings. Will change after editing is finished -->
 
-    <h1>Git</h1>
 
-    <h2 id="C1">What is Git?</h2>
+        </div>
+        <div id="content">
 
-    <p>Git is a version control system that acts like a time machine for your documentation.
-        Git allows you to:
-    <ul>
-        <li>Save snapshots of your work</li>
-        <li>Revert to earlier versions</li>
-        <li>Collaborate without overwriting other's changes</li>
-    </ul>
-    </p>
+            <div>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#C1">What is Git?</a></li>
+                    <li><a href="#C2">Why Should I Use Git?</a></li>
+                    <li><a href="#C3">Important Terms</a></li>
+                    <li><a href="#C4">Git vs. GitHub</a></li>
+                    <li><a href="#C5">Git Exercises</a></li>
+                    <li><a href="#C6">Exercise 1: Create a Practice Folder</a></li>
+                    <li><a href="#C7">Exercise 2: Create a Practice File</a></li>
+                    <li><a href="#C8">Exercise 3: Changing a File</a></li>
+                    <li><a href="#C9">Exercise 4: Create a Branch</a></li>
+                    <li><a href="#C10">Exercise 5: Merging Branches</a></li>
+                    <li><a href="#C11">Exercise 6: Revise in Markdown Editor</a></li>
+                    <li><a href="#C12">Exercise 7: View Commit History</a></li>
+                    <li><a href="#C13">Exercise 8: Revising a Commit Message</a></li>
+                    <li><a href="#C14">Exercise 9: Delete a Commit</a></li>
+                </ul>
+            </div>
 
-    <p>Git is <b>not</b> an organizational convention or folder structure.
-        Git does <b>not</b> rely on manual file naming or back-ups</p>
+            <!-- Slightly modified headings. Will change after editing is finished -->
 
-    <p>Git is a command-line tool or hosting platform that creates or stores a hidden .git folder in your project
-        directory and
-        automatically stores version history, branches, and metadata.</p>
+            <h1>Git</h1>
 
-    <h2 id="C2">Why Should I Use Git?</h2>
+            <h2 id="C1">What is Git?</h2>
 
-    <ul>
-        <li>To see who has changed what, when, and why</li>
-        <li>To collaborate without siloing documentation</li>
-        <li>To make sure every change to a file is documented and reviewable</li>
-        <li>To provide a safe place for experimentation</li>
-        <li>To work offline on local copies with seamless merging back into the main branch</li>
-        <li>To allow simultaneous development, with built-in mechanisms for managing changes and resolving conflicts
-        </li>
-    </ul>
+            <p>Git is a version control system that acts like a time machine for your documentation.
+                Git allows you to:
+            <ul>
+                <li>Save snapshots of your work</li>
+                <li>Revert to earlier versions</li>
+                <li>Collaborate without overwriting other's changes</li>
+            </ul>
+            </p>
 
-    <h2 id="C3">Important Terms</h2>
+            <p>Git is <b>not</b> an organizational convention or folder structure.
+                Git does <b>not</b> rely on manual file naming or back-ups</p>
 
-    <p><b>Repository</b>: a folder tracked by Git</p>
+            <p>Git is a command-line tool or hosting platform that creates or stores a hidden .git folder in your
+                project
+                directory and
+                automatically stores version history, branches, and metadata.</p>
 
-    <p><b>Commit</b>: a saved change to a file</p>
+            <h2 id="C2">Why Should I Use Git?</h2>
 
-    <p><b>Branch</b>: a parallel version of the project</p>
+            <ul>
+                <li>To see who has changed what, when, and why</li>
+                <li>To collaborate without siloing documentation</li>
+                <li>To make sure every change to a file is documented and reviewable</li>
+                <li>To provide a safe place for experimentation</li>
+                <li>To work offline on local copies with seamless merging back into the main branch</li>
+                <li>To allow simultaneous development, with built-in mechanisms for managing changes and resolving
+                    conflicts
+                </li>
+            </ul>
 
-    <p><b>Merge</b>: Combining changes between branches</p>
+            <h2 id="C3">Important Terms</h2>
 
-    <h2 id="C4">Git vs. GitHub</h2>
+            <p><b>Repository</b>: a folder tracked by Git</p>
 
-    <p>Git is a [version control tool](https://git-scm.com) that can be installed locally to track changes to files.
-        Git can be used offline, and does not require hosting platforms such as GitHub.</p>
+            <p><b>Commit</b>: a saved change to a file</p>
 
-    <p>GitHub is a hosting platform for Git repositories.
-        It adds collaborative features like pull requests, issue tracking, cloud storage,
-        and web-based access. GitHub alternatives include GitLab, Bitbucket, local-only Git (for individuals),
-        and self-hosted Git servers (for organizations).</p>
+            <p><b>Branch</b>: a parallel version of the project</p>
 
-    <h1 id="C5">Git Exercises</h1>
+            <p><b>Merge</b>: Combining changes between branches</p>
 
-    <h2 id="C6">Exercise 1: Create a Practice Folder</h2>
+            <h2 id="C4">Git vs. GitHub</h2>
 
-    <ol>
-        <li>Open Terminal/Command Prompt</li>
-        <p>Mac: open Terminal from Applications/Utility folder or by using Spotlight Search</p>
-        <p>Windows: open Command Prompt by typing "cmd" into Windows search bar</p>
-        <li>Type 'mkdir git-practice' and hit enter</li>
-        <p>'mkdir' is a basic command-line tool, which stands for "make directory."
-            This will create a new folder (repository). On your harddrive, you will see a new git-practice folder.</p>
-        <li>Type 'cd git-practice' and hit enter</li>
-        <p>'cd' is a basic command-line tool, which stands for "change directory".
-            This instructs Terminal/Command Prompt to work inside only this new folder.</p>
-        <li>Type 'git init' and hit enter to initialize Git</li>
-        <p>This action will create an invisible .git file within the `git-practice` folder, where versions and metadata
-            will be stored.</p>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%201.4%20Create%20Practice%20Folder.png?raw=true">
-    </ol>
+            <p>Git is a [version control tool](https://git-scm.com) that can be installed locally to track changes to
+                files.
+                Git can be used offline, and does not require hosting platforms such as GitHub.</p>
 
-    <h2 id="C7">Exercise 2: Create a Practice File</h2>
+            <p>GitHub is a hosting platform for Git repositories.
+                It adds collaborative features like pull requests, issue tracking, cloud storage,
+                and web-based access. GitHub alternatives include GitLab, Bitbucket, local-only Git (for individuals),
+                and self-hosted Git servers (for organizations).</p>
 
-    <p>! - If you're starting from the last exercise, skip to step 3</p>
+            <h1 id="C5">Git Exercises</h1>
 
-    <ol>
-        <li>Open Terminal/Command Prompt</li>
-        <p>Mac: open Terminal from Applications/Utility folder or by using Spotlight Search</p>
-        <p>Windows: open Command Prompt by typing "cmd" into Windows search bar</p>
-        <li>Type 'cd git-practice' and hit enter</li>
-        <p>'cd' is a basic command-line tool, which stands for "change directory".
-            This instructs Terminal/Command Prompt to work inside only this new folder.</p>
-        <li>Type `echo "# This Is A Test" > README.md` and hit enter</li>
-        <p>`echo` is used to output text, in this case writing the content "This Is A Test" as a title header (#) into a
-            file named README.md.</p>
-        <p>You will now see a markdown file named README.md in your git-practice folder, with the content “# This Is A
-            Test”.</p>
-        <li>Type `git add README.md` and hit enter</li>
-        <p>`git add` tells Git to prepare for a change you want to save, but does ***not*** save the changes yet.
-            `README.md` is the specific file being prepared.
-            There will be no visible change to the markdown file.</p>
-        <li>Type `git commit -m "Initial commit with README"` and hit enter</li>
-        <p>`git commit` saves a snapshot of the file and `-m` lets you add a description of the change.
-            In this case, the message is "Initial commit with README".</p>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%202.5%20Create%20Practice%20File.png?raw=true">
-    </ol>
+            <h2 id="C6">Exercise 1: Create a Practice Folder</h2>
 
-    <h2 id="C8">Exercise 3: Changing a File</h2>
+            <ol>
+                <li>Open Terminal/Command Prompt</li>
+                <p>Mac: open Terminal from Applications/Utility folder or by using Spotlight Search</p>
+                <p>Windows: open Command Prompt by typing "cmd" into Windows search bar</p>
+                <li>Type 'mkdir git-practice' and hit enter</li>
+                <p>'mkdir' is a basic command-line tool, which stands for "make directory."
+                    This will create a new folder (repository). On your harddrive, you will see a new git-practice
+                    folder.
+                </p>
+                <li>Type 'cd git-practice' and hit enter</li>
+                <p>'cd' is a basic command-line tool, which stands for "change directory".
+                    This instructs Terminal/Command Prompt to work inside only this new folder.</p>
+                <li>Type 'git init' and hit enter to initialize Git</li>
+                <p>This action will create an invisible .git file within the `git-practice` folder, where versions and
+                    metadata
+                    will be stored.</p>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%201.4%20Create%20Practice%20Folder.png?raw=true">
+            </ol>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.5%20Added%20a%20subheading.png?raw=true">
-    </ol>
+            <h2 id="C7">Exercise 2: Create a Practice File</h2>
 
-    <h2 id="C9">Exercise 4: Create a Branch</h2>
+            <p>! - If you're starting from the last exercise, skip to step 3</p>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <li>Step 6</li>
-        <li>Step 7</li>
-        <li>Step 8</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%204.8%20Create%20Practice%20Branch.png?raw=true">
-    </ol>
+            <ol>
+                <li>Open Terminal/Command Prompt</li>
+                <p>Mac: open Terminal from Applications/Utility folder or by using Spotlight Search</p>
+                <p>Windows: open Command Prompt by typing "cmd" into Windows search bar</p>
+                <li>Type 'cd git-practice' and hit enter</li>
+                <p>'cd' is a basic command-line tool, which stands for "change directory".
+                    This instructs Terminal/Command Prompt to work inside only this new folder.</p>
+                <li>Type `echo "# This Is A Test" > README.md` and hit enter</li>
+                <p>`echo` is used to output text, in this case writing the content "This Is A Test" as a title header
+                    (#)
+                    into a
+                    file named README.md.</p>
+                <p>You will now see a markdown file named README.md in your git-practice folder, with the content “#
+                    This Is
+                    A
+                    Test”.</p>
+                <li>Type `git add README.md` and hit enter</li>
+                <p>`git add` tells Git to prepare for a change you want to save, but does ***not*** save the changes
+                    yet.
+                    `README.md` is the specific file being prepared.
+                    There will be no visible change to the markdown file.</p>
+                <li>Type `git commit -m "Initial commit with README"` and hit enter</li>
+                <p>`git commit` saves a snapshot of the file and `-m` lets you add a description of the change.
+                    In this case, the message is "Initial commit with README".</p>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%202.5%20Create%20Practice%20File.png?raw=true">
+            </ol>
 
-    <h2 id="C10">Exercise 5: Merging Branches</h2>
+            <h2 id="C8">Exercise 3: Changing a File</h2>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%205.5%20Merging%20Branches.png?raw=true">"
-    </ol>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.5%20Added%20a%20subheading.png?raw=true">
+            </ol>
 
-    <h2 id="C11">Exercise 6: Revise in Markdown Editor</h2>
+            <h2 id="C9">Exercise 4: Create a Branch</h2>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <li>Step 6</li>
-        <li>Step 7</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%206.7%20Revising%20in%20Mardown%20Editor.png?raw=true">
-    </ol>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <li>Step 6</li>
+                <li>Step 7</li>
+                <li>Step 8</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%204.8%20Create%20Practice%20Branch.png?raw=true">
+            </ol>
 
-    <h2 id="C12">Exercise 7: View Commit History</h2>
+            <h2 id="C10">Exercise 5: Merging Branches</h2>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.3%20Compact%20Commit%20List.png?raw=true">
-        <li>Step 4</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%207.4%20Complete%20Commit%20List.png?raw=true">
-    </ol>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%205.5%20Merging%20Branches.png?raw=true">"
+            </ol>
 
-    <h2 id="C13">Exercise 8: Revising a Commit Message</h2>
+            <h2 id="C11">Exercise 6: Revise in Markdown Editor</h2>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <li>Step 6</li>
-        <li>Step 7</li>
-        <li>Step 8</li>
-        <li>Step 9</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%208.9%20Revising%20a%20Commit%20Message.png?raw=true">
-    </ol>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <li>Step 6</li>
+                <li>Step 7</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%206.7%20Revising%20in%20Mardown%20Editor.png?raw=true">
+            </ol>
 
-    <h2 id="C14">Exercise 9: Delete a Commit</h2>
+            <h2 id="C12">Exercise 7: View Commit History</h2>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <li>Step 3</li>
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <li>Step 6</li>
-        <li>Step 7</li>
-        <li>Step 8</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%209.8%20Deleting%20a%20Commit.png?raw=true">
-    </ol>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.3%20Compact%20Commit%20List.png?raw=true">
+                <li>Step 4</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%207.4%20Complete%20Commit%20List.png?raw=true">
+            </ol>
 
-    <p><i><b>Note</b></i>: after completing any or all of these Git exercises on your computer,
-        you can get rid of the folder, markdown file, and hidden .git file by deleting the git-practice folder.</p>
+            <h2 id="C13">Exercise 8: Revising a Commit Message</h2>
 
-    <p>Next, <a href="resources.html">Resources</a></p>
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <li>Step 6</li>
+                <li>Step 7</li>
+                <li>Step 8</li>
+                <li>Step 9</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%208.9%20Revising%20a%20Commit%20Message.png?raw=true">
+            </ol>
 
+            <h2 id="C14">Exercise 9: Delete a Commit</h2>
+
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <li>Step 3</li>
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <li>Step 6</li>
+                <li>Step 7</li>
+                <li>Step 8</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%209.8%20Deleting%20a%20Commit.png?raw=true">
+            </ol>
+
+            <p><i><b>Note</b></i>: after completing any or all of these Git exercises on your computer,
+                you can get rid of the folder, markdown file, and hidden .git file by deleting the git-practice folder.
+            </p>
+
+            <p>Next, <a href="resources.html">Resources</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
