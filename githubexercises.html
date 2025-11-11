@@ -10,167 +10,232 @@
 </head>
 
 <body class="article">
+    <!-- TOP NAV COLOR-->
+    <nav style="width:100%;height:76px;
+    background:linear-gradient(135deg, #2ED2C9 0%, #2697B2 100%); 
+padding:0.5em 0 0.5em 0.5em;box-sizing:border-box;
+position:fixed;top:0;left:0;z-index:100;">
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="docsascode.html">Docs as Code</a>
-        <a class="active" href="githubexercises.html">GitHub Exercises</a>
-        <a href="gitexercises.html">Git Exercises</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html">Glossary</a>
+
+        <!-- LEFT NAV -->
+        <!-- TOP NAV COLOR-->
+        <div class="side-fixed-column left-fixed-column"
+            style="position: absolute; top: 76px; left: 0px; width: 220px; 
+            background: linear-gradient(135deg, #2ED2C9 0%, #2697B2 100%); 
+            z-index: 98; display: flex; align-items: flex-start; justify-content: center; box-shadow: rgba(118, 75, 162, 0.07) 2px 0px 8px; height: 304px;">
+
+            <div style="font-size:1.1em;
+            color:#764ba2;
+            font-weight:bold;text-align:left;padding:2em 1em 2em 1em;">
+                <p class="column"><a class="active" href="index.html">Home</a></p>
+                <p class="column"><a href="docsascode.html">Docs as Code</a></p>
+                <p class="column"><a href="githubexercises.html">GitHub Exercises</a></p>
+                <p class="column"><a href="gitexercises.html">Git Exercises</a></p>
+                <p class="column"><a href="resources.html">Resources</a></p>
+                <p class="column"><a href="glossary.html">Glossary</a></p>
+            </div>
+        </div>
+
+        <!-- TOP BAR -->
+        <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+            <div style="display:inline-flex;align-items:center;">
+                <img src="Images/logo.png" alt="Logo"
+                    style="height:50px;width:50px;vertical-align:middle;margin-right:1em;">
+                <span style="color:#fff;text-decoration:none;font-weight:bold;font-size:1.3em;">Six Blades
+                    Solutions</span>
+            </div>
+            <span style="color: #fff;text-decoration:none;font-weight:bold;font-size:1.3em;text-align:right;">Students.
+                Coders. Creators.</span>
+        </div>
     </nav>
+    <br><br><br><br><br>
+    <div style="margin-left:220px;margin-right:220px;">
+        <div id="header">
+            <!-- Hamburger button -->
+            <button class="nav-toggle-btn" id="openNavBtn" title="Open Navigation"
+                aria-label="Open Navigation">☰</button>
 
-    <nav>
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="#C1">Exercise 1: Creating a Repository</a></li>
-            <li><a href="#C2">Exercise 2: Creating a Branch on a Repository Through GitHub</a></li>
-            <li><a href="#C3">Exercise 3: Making Edits on a Repository Branch</a></li>
-            <li><a href="#C4">Exercise 4: Creating a Pull Request on GitHub</a></li>
-            <li><a href="#C5">Exercise 5: Merging a Pull Request</a></li>
-            <li><a href="#C6">Exercise 6: Merging a Pull Request with Conflicts</a></li>
-            <li><a href="#C7">Exercise 7: Updating a Branch with the Main Branch on GitHub</a></li>
-            <li><a href="#C8">Exercise 8: Deleting a Branch on GitHub</a></li>
-            <li><a href="#C9">Exercise 9: Forking a Repository on GitHub</a></li>
-            <li><a href="#C10">Exercise 10: Deleting a Repository Through GitHub</a></li>
-        </ul>
-    </nav>
+            <!-- Side drawer -->
+            <div class="side-drawer" id="sideDrawer">
+                <button class="nav-toggle-btn" id="closeNavBtn" title="Close Navigation"
+                    aria-label="Close Navigation">☰</button>
+                <!-- Drawer content goes here -->
+                <div style="margin-top:2em;">
+                    <strong>Table of Contents</strong><br>
+                    <br>
+                    <p class="column"><a class="active" href="index.html">Home</a></p>
+                    <p class="column"><a href="docsascode.html">Docs as Code</a></p>
+                    <p class="column"><a href="githubexercises.html">GitHub Exercises</a></p>
+                    <p class="column"><a href="gitexercises.html">Git Exercises</a></p>
+                    <p class="column"><a href="resources.html">Resources</a></p>
+                    <p class="column"><a href="glossary.html">Glossary</a></p>
+                    <hr>
+                </div>
+            </div>
 
-    <h1>GitHub Exercises</h1>
 
-    <p>GitHub exercises introduction? (TBD)</p>
+        
+        </div>
+        <div id="content">
+            <nav>
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#C1">Exercise 1: Creating a Repository</a></li>
+                    <li><a href="#C2">Exercise 2: Creating a Branch on a Repository Through GitHub</a></li>
+                    <li><a href="#C3">Exercise 3: Making Edits on a Repository Branch</a></li>
+                    <li><a href="#C4">Exercise 4: Creating a Pull Request on GitHub</a></li>
+                    <li><a href="#C5">Exercise 5: Merging a Pull Request</a></li>
+                    <li><a href="#C6">Exercise 6: Merging a Pull Request with Conflicts</a></li>
+                    <li><a href="#C7">Exercise 7: Updating a Branch with the Main Branch on GitHub</a></li>
+                    <li><a href="#C8">Exercise 8: Deleting a Branch on GitHub</a></li>
+                    <li><a href="#C9">Exercise 9: Forking a Repository on GitHub</a></li>
+                    <li><a href="#C10">Exercise 10: Deleting a Repository Through GitHub</a></li>
+                </ul>
+            </nav>
 
-    <h2 id="C1">Exercise 1: Creating a repository</h2>
+            <h1>GitHub Exercises</h1>
 
-    <p>In this first exercise, we will create a repository.
-        Repositories are used to store projects in GitHub and to master GitHub, you will need to be familiar with
-        creating them.
-        Follow along with this exercise to create your very first repository.</p>
+            <p>GitHub exercises introduction? (TBD)</p>
 
-    <ol>
-        <li>On your GitHub homepage, locate the “New” button in the “Top repositories” column and click it.</li>
-        <img src="C:\Users\n8alb\PTW_330_SixBlades_Project\images\GitHub Ex 1.1 Clicking Create a New Repository Button Snagit.png"
-            width="50%">
-        <li>Write a name for your repository. This will be your personal repository, so get as creative as you want with
-            the name.</li>
-        <li>Add a description to your repository. For this exercise, add: “this is my first repository.”</li>
-        <li>Visibility adjusts who can see your repository. Since it is a personal one solely for these exercises, click
-            the dropdown arrow and use the “Private” option.</li>
-        <li>Click the “Add README” button. README files are generally used as longer descriptions for the repository and
-            explain what your project is about.</li>
-        <li>Click the “Create repository” button. Don’t worry about the other options.</li>
-        <img src="C:\Users\n8alb\PTW_330_SixBlades_Project\images\GitHub Ex 1.6 Creating a Repository Menu Snagit.png"
-            width="50%">
-    </ol>
+            <h2 id="C1">Exercise 1: Creating a repository</h2>
 
-    <p>Congratulations, you've created your first repository!</p>
+            <p>In this first exercise, we will create a repository.
+                Repositories are used to store projects in GitHub and to master GitHub, you will need to be familiar
+                with
+                creating them.
+                Follow along with this exercise to create your very first repository.</p>
 
-    <h2 id="C2">Exercise 2: Creating a Branch on a Repository Through GitHub</h2>
+            <ol>
+                <li>On your GitHub homepage, locate the “New” button in the “Top repositories” column and click it.</li>
+                <img src="C:\Users\n8alb\PTW_330_SixBlades_Project\images\GitHub Ex 1.1 Clicking Create a New Repository Button Snagit.png"
+                    width="50%">
+                <li>Write a name for your repository. This will be your personal repository, so get as creative as you
+                    want
+                    with
+                    the name.</li>
+                <li>Add a description to your repository. For this exercise, add: “this is my first repository.”</li>
+                <li>Visibility adjusts who can see your repository. Since it is a personal one solely for these
+                    exercises,
+                    click
+                    the dropdown arrow and use the “Private” option.</li>
+                <li>Click the “Add README” button. README files are generally used as longer descriptions for the
+                    repository
+                    and
+                    explain what your project is about.</li>
+                <li>Click the “Create repository” button. Don’t worry about the other options.</li>
+                <img src="C:\Users\n8alb\PTW_330_SixBlades_Project\images\GitHub Ex 1.6 Creating a Repository Menu Snagit.png"
+                    width="50%">
+            </ol>
 
-    <p>Exercise introduction paragraph.</p>
+            <p>Congratulations, you've created your first repository!</p>
 
-    <ol>
-        <li>Step 1</li>
-        <li>Step 2</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.2%20Clicking%20View%20All%20Branches%20Button.png?raw=true">
-        <li>Step 3</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.3%20Creating%20a%20New%20Branch%20from%20the%20Repository%20Branches%20Menu.png?raw=true">
-        <li>Step 4</li>
-        <li>Step 5</li>
-        <img
-            src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.5%20Creating%20a%20New%20Branch%20Button.png?raw=true">
-        <li>Step 6</li>
-    </ol>
+            <h2 id="C2">Exercise 2: Creating a Branch on a Repository Through GitHub</h2>
 
-    <p>Congratulations, you've created a new branch for a GitHub repository!</p>
+            <p>Exercise introduction paragraph.</p>
 
-    <!-- I will try and fix up my screenshots before implementing the rest.
+            <ol>
+                <li>Step 1</li>
+                <li>Step 2</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.2%20Clicking%20View%20All%20Branches%20Button.png?raw=true">
+                <li>Step 3</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.3%20Creating%20a%20New%20Branch%20from%20the%20Repository%20Branches%20Menu.png?raw=true">
+                <li>Step 4</li>
+                <li>Step 5</li>
+                <img
+                    src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/GitHub%20Ex%202.5%20Creating%20a%20New%20Branch%20Button.png?raw=true">
+                <li>Step 6</li>
+            </ol>
+
+            <p>Congratulations, you've created a new branch for a GitHub repository!</p>
+
+            <!-- I will try and fix up my screenshots before implementing the rest.
  They are still blurry and it would be better not to implement them twice.-->
 
-    <h2 id="C3">Exercise 3: Making Edits on a Repository Branch</h2>
+            <h2 id="C3">Exercise 3: Making Edits on a Repository Branch</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C4">Exercise 4: Creating a Pull Request on GitHub</h2>
+            <h2 id="C4">Exercise 4: Creating a Pull Request on GitHub</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C5">Exercise 5: Merging a Pull Request</h2>
+            <h2 id="C5">Exercise 5: Merging a Pull Request</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C6">Exercise 6: Merging a Pull Request with Conflicts</h2>
+            <h2 id="C6">Exercise 6: Merging a Pull Request with Conflicts</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C7">Exercise 7: Updating a Branch with the Main Branch on GitHub</h2>
+            <h2 id="C7">Exercise 7: Updating a Branch with the Main Branch on GitHub</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C8">Exercise 8: Deleting a Branch on GitHub</h2>
+            <h2 id="C8">Exercise 8: Deleting a Branch on GitHub</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C9">Exercise 9: Forking a Repository on GitHub</h2>
+            <h2 id="C9">Exercise 9: Forking a Repository on GitHub</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <h2 id="C10">Exercise 10: Deleting a Repository Through GitHub</h2>
+            <h2 id="C10">Exercise 10: Deleting a Repository Through GitHub</h2>
 
-    <p>...</p>
+            <p>...</p>
 
-    <ol>
+            <ol>
 
-    </ol>
+            </ol>
 
-    <p>...</p>
+            <p>...</p>
 
-    <p>Next, <a href="gitexercises.html">Git practice exercises.</a></p>
-
+            <p>Next, <a href="gitexercises.html">Git practice exercises.</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
