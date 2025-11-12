@@ -95,82 +95,94 @@ position:fixed;top:0;left:0;z-index:100;">
 
             <h2 id="C1">Tool Alternatives</h2>
 
-            <p>While Git and GitHub dominate the current landscape as the standard combination,
-                some large organizations use alternative tools for specific enterprise features.</p>
+                <p>While Git and GitHub dominate the current landscape as the standard combination,
+                    some large organizations use alternative tools for specific enterprise features.</p>
 
-            <h3 id="C2">Git Alternatives</h3>
+                <h3 id="C2">Git Alternatives</h3>
 
-            <!-- I'm thinking it might not be a bad idea to make the alternatives as headers.
-             It might be easier to read the code that way. Would love opinions.-->
+                    <p>Version control systems can be centralized or distributed. You can evaluate the 
+                    options based on specific requirements of your organization.</p>
 
-            <p>Version control systems can be centralized or distributed.
-                You can evaluate the options based on specific requirements of your organization.</p>
+                <h4>Centralized Version Control Systems (CVCS)</h4>
+                    <p>In CVCS, developers check out files from a single central server and commit their changes 
+                        back to it. Every operation requires communication with the central server. While this 
+                        makes access control easier and a straightforward “single source of truth” ecosystem to 
+                        work with, the performance is often slow and offline work is not possible.</p>
 
-            <p><b>Centralized Version Control Systems (CVCS)</b></p>
-            <p>In CVCS, developers check out files from a single central server and commit their changes back to it.
-                Every
-                operation requires communication with the central server.
-                While this makes access control easier and a straightforward “single source of truth” ecosystem to work
-                with,
-                the performance is often slow and offline work is not possible.</p>
+                <h4><a href="https://subversion.apache.org/" target="_blank">Subversion</a></h4>
+                    <p>Unlike Git, SVN operates with a single master repository. It is used in regulated 
+                        industries with strict access control and auditing requirements. Wells Fargo, 
+                        Standard Chartered, and government and defence organizations use SVN.</p>
 
-            <p><b><a href="https://subversion.apache.org/" target="_blank">Subversion</a></b></p>
-            <p>Unlike Git, SVN operates with a single master repository. It is used in regulated industries with strict
-                access
-                control and auditing requirements.
-                Wells Fargo, Standard Chartered, and government and defence organizations use SVN.</p>
+                <h4><a href="https://www.perforce.com/" target="_blank">Perforce Helix Core</a></h4>
+                    <p>Perforce Helix Core is a commercial product that is known for its high performance and 
+                        scalability, making it a popular choice for large-scale development, particularly in 
+                        industries like game development and media. NVIDIA, Seagate and Ubisoft are some of the 
+                        organizations currently using it.</p>
 
-            <p><b><a href="https://www.perforce.com/" target="_blank">Perforce Helix Core</a></b></p>
-            <p>Perforce Helix Core is a commercial product that is known for its high performance and scalability,
-                making it a popular choice for large-scale development, particularly in industries like game development
-                and
-                media.
-                NVIDIA, Seagate and Ubisoft are some of the organizations currently using it.</p>
+                <h4>Distributed Version Control Systems (DVCS)</h4>
+                    <p>In DVCS, each developer has a full local copy of the repository, including its entire 
+                        history. They can commit locally and only need to connect to a remote server to push or 
+                        pull changes to/from others. While a DVCS promises faster performance and flexible 
+                        workflows, most tend to have a steeper learning curve and complex access controls.</p>
+                
+                <p>Git is a distributed version control system. The additional examples listed below are 
+                    open source. Large organizations like Meta and Mozilla have used Mercurial in the past 
+                    for scalability, and have now moved to Git-based systems.</p>
 
-            <p><b>Distributed Version Control Systems (DVCS)</b></p>
-            <p>...</p>
-            <p>...</p>
+                <h4><a href="https://mercurial-scm.org/" target="_blank">Mercurial (Hg)</a></h4>
+                    <p>Mercurial offers a similar distributed model to Git but often with a more streamlined 
+                        command-line interface. It is recommended for projects where ease of use is a priority.</p>
 
-            <p><b><a href="https://mercurial-scm.org/" target="_blank">Mercurial (Hg)</a></b></p>
-            <p>...</p>
-
-            <p><b><a href="https://fossil-scm.org/home/doc/trunk/www/index.wiki" target="_blank">
-                        Fossil</a></b></p>
-            <p>...</p>
+                <h4><a href="https://fossil-scm.org/home/doc/trunk/www/index.wiki" target="_blank">Fossil</a></h4>
+                    <p>Fossil integrates version control, a wiki, bug tracking, and forums into a single system. 
+                        It is preferred by smaller teams or individual developers for its “all-in-one” design.</p>
 
             <h3 id="C3">GitHub Alternatives</h3>
 
-            <p><b><a href="https://about.gitlab.com/" target="_blank">GitLab</a></b></p>
-            <p>...</p>
+            <h4><a href="https://about.gitlab.com/" target="_blank">GitLab</a></h4>
+                <p>In addition to core Git hosting and collaboration features, GitLab promotes itself as a 
+                    DevSecOps platform with built-in CI/CD, available with self-hosting options on both cloud 
+                    and on-premises. GitLab has greater security control and compliance features. It is 
+                    currently being used by enterprises like Lockheed Martin and NASA.</p>
 
-            <p><b><a href="https://www.atlassian.com/software/bitbucket" target="_blank">Bitbucket</a></b></p>
-            <p>...</p>
+            <h4><a href="https://www.atlassian.com/software/bitbucket" target="_blank">Bitbucket</a></h4>
+                <p>As a product by Atlassian, Bitbucket is well-integrated with the parent organization’s other 
+                    industry prevalent tools like Jira and Confluence. Bitbucket’s strength lies in its native 
+                    integration with the Atlassian ecosystem, and it is used in organizations like Netflix and 
+                    Samsung.</p>
 
             <h3 id="C4">GitHub Pages Alternatives</h3>
-            <p><b><a href="https://docs.gitlab.com/" target="_blank">GitLab Pages</a></b></p>
-            <p>...</p>
 
-            <p><b><a href="https://about.readthedocs.com/" target="_blank">Read the Docs</a></b></p>
-            <p>...</p>
+            <h4><a href="https://docs.gitlab.com/" target="_blank">GitLab Pages</a></h4>
+                <p>GitLab Pages is a part of the GitLab ecosystem. It offers full CI/CD integration, so you can 
+                    publish websites directly from a GitLab repository. It is commonly used in organizations 
+                    where GitLab is used for code hosting - for example, NASA.</p>
+
+            <h4><a href="https://about.readthedocs.com/" target="_blank">Read the Docs</a></h4>
+                <p>Read the docs is a dedicated documentation platform with built-in full-text search and 
+                    navigation options out of the box. It is used by tech organizations like AWS and AMD.</p>
 
             <h2 id="C5">Additional Resources</h2>
 
-            <p>...</p>
+                <p>We have attempted to provide adequate information for you to get started with Docs as Code. 
+                    If you are interested in a deeper understanding, you can refer to the following resources as 
+                    starting points for further research:</p>
 
-            <ol>
-                <li><a href="https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources"
-                        target="_blank">
-                        Git and GitHub Learning Resources</a></li>
-                <li><a href="https://www.linkedin.com/learning/git-essential-training-25677984" target="_blank">
-                        Git Essential Training on LinkedIn Learning</a></li>
-                <li><a href="https://www.coursera.org/learn/introduction-git-github" target="_blank">
-                        Introduction to Git and GitHub on Coursera</a></li>
-                <li><a href="https://www.writethedocs.org/guide/docs-as-code/" target="_blank">
-                        Write the Docs on Docs as Code</a></li>
-                <li><a href="https://medium.com/pinterest-engineering/adopting-docs-as-code-at-pinterest-4f18ad169c25"
-                        target="_blank">
-                        Case Study: Adopting Docs-as-Code at Pinterest</a></li>
-            </ol>
+                <ol>
+                    <li><a href="https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources"
+                            target="_blank">
+                            Git and GitHub Learning Resources</a></li>
+                    <li><a href="https://www.linkedin.com/learning/git-essential-training-25677984" target="_blank">
+                            Git Essential Training on LinkedIn Learning</a></li>
+                    <li><a href="https://www.coursera.org/learn/introduction-git-github" target="_blank">
+                            Introduction to Git and GitHub on Coursera</a></li>
+                    <li><a href="https://www.writethedocs.org/guide/docs-as-code/" target="_blank">
+                            Write the Docs on Docs as Code</a></li>
+                    <li><a href="https://medium.com/pinterest-engineering/adopting-docs-as-code-at-pinterest-4f18ad169c25"
+                            target="_blank">
+                            Case Study: Adopting Docs-as-Code at Pinterest</a></li>
+                </ol>
 
         </div>
     </div>
