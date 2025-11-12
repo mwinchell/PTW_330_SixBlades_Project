@@ -94,110 +94,166 @@ position:fixed;top:0;left:0;z-index:100;">
 
             <h2 id="C1">Explanation</h2>
 
-            <p>The Docs as Code philosophy treats documentation with the same care, discipline, and tooling as software
-                development. Instead of writing in word processors or content management systems that hide version
-                history,
-                technical writers work with plain-text source files—often in Markdown, AsciiDoc, or
-                reStructuredText—stored
-                in a
-                Git repository. Git will be explained in detail later in this section. This approach recognizes that
-                documentation is not an afterthought or a separate artifact, but an integral part of the software
-                itself.
-                When
-                the documentation and the code share the same version control system, they can evolve together, ensuring
-                accuracy and alignment with product changes.</p>
+                <p>The Docs as Code philosophy treats documentation with the same care, discipline, and tooling 
+                    as software development. Instead of writing in word processors or content management 
+                    systems that hide version history, technical writers work with plain-text source 
+                    files—often in Markdown, AsciiDoc, or reStructuredText—stored in a Git repository. 
+                    Git will be explained in detail later in this section. This approach recognizes that 
+                    documentation is not an afterthought or a separate artifact, but an integral part of the 
+                    software itself. When the documentation and the code share the same version control system, 
+                    they can evolve together, ensuring accuracy and alignment with product changes.</p>
 
-            <p>...</p>
+                <p>At its core, Docs as Code is built around the same workflows developers use every day. 
+                    Writers create and edit content in branches, submit pull requests for peer review, and 
+                    rely on tools like GitHub, GitLab, or Bitbucket for collaboration and versioning. 
+                    This brings transparency and accountability to documentation: every edit has an author, 
+                    a timestamp, and a record of discussion. Automated builds and tests—powered by continuous 
+                    integration (CI) pipelines—can check for spelling errors, broken links, or formatting issues,
+                    and even publish updates to a live documentation site when approved changes are merged. 
+                    CI/CD pipelines will be explained in detail later in this section.</p>
 
-            <p>...</p>
+                <p>This method also improves collaboration between writers and developers. Because the 
+                    documentation lives alongside the code, developers can easily update or annotate content 
+                    as they implement new features. Technical writers gain greater visibility into software 
+                    changes and can review differences (“diffs”) to see exactly what’s been modified. The shared 
+                    environment encourages knowledge exchange: writers become more familiar with the technical 
+                    context, while developers gain appreciation for the clarity and accuracy of good documentation.</p>
 
-            <p>...</p>
+                <p>However, adopting Docs as Code requires a cultural and technical adjustment. Writers must 
+                    learn to use developer tools such as Git, the command line, and text editors like Visual 
+                    Studio Code. Reviewers must adapt to reading and commenting on documentation through pull 
+                    requests rather than word processor track changes. Some nontechnical contributors may 
+                    initially find the workflow intimidating. To succeed, organizations often invest in 
+                    onboarding, templates, and automation to lower these barriers and make the Docs as Code 
+                    pipeline more accessible to everyone involved.</p>
 
-            <p>...</p>
+                <p>Ultimately, the Docs as Code model aligns documentation with modern software development 
+                    practices—fast, iterative, and transparent. It allows teams to maintain versioned, testable, 
+                    and easily deployable documentation that can be trusted as a single source of truth. By 
+                    integrating writing into the same lifecycle as coding, Docs as Code transforms documentation 
+                    from static deliverables into living, evolving systems of knowledge. It not only improves 
+                    technical accuracy and consistency but also fosters a shared sense of ownership over 
+                    communication and clarity across the entire product team.</p>
 
             <h2 id="C2">Version Control: Git/GitHub</h2>
 
-            <p>...</p>
+                <p>Git is a distributed version control system that allows multiple people to work on the same 
+                    project while keeping a complete, trackable history of every change. Originally created by 
+                    Linus Torvalds in 2005 to manage the Linux kernel, Git records snapshots of a project’s 
+                    files over time. Each contributor has a full local copy of the repository, meaning work can 
+                    continue independently without constant internet access. Git’s branching and merging model 
+                    makes it easy to experiment safely—users can create branches to test ideas or write 
+                    documentation, then merge their changes back into the main project once reviewed.</p>
 
-            <p>...</p>
+                <p>GitHub is a cloud-based platform built on top of Git that simplifies collaboration and version 
+                    control. It hosts Git repositories online, providing a web interface where users can browse 
+                    files, review code or documentation, report issues, and manage projects. GitHub adds social 
+                    and organizational features like pull requests, code reviews, and discussions, making it 
+                    easier for distributed teams to coordinate changes. It also integrates with continuous 
+                    integration and deployment tools, allowing teams to automate testing, build, and publishing 
+                    workflows.</p>
 
-            <p>...</p>
+                <p>Together, Git and GitHub form the backbone of many modern development and documentation 
+                    practices—including the Docs as Code approach. Writers and developers alike use Git to 
+                    track and manage changes, while GitHub provides a shared space for collaboration, 
+                    feedback, and publication. This combination enables transparency, accountability, and 
+                    versioned control over every contribution, ensuring that projects—whether code or 
+                    documentation—can evolve smoothly and consistently over time.</p>
 
             <h2 id="C3">CI/CD Pipeline</h2>
 
-            <p>...</p>
+                <p>A CI/CD pipeline (Continuous Integration and Continuous Deployment/Delivery) is an 
+                    automated process that helps teams build, test, and release software—or 
+                    documentation—more efficiently and reliably. In a CI/CD workflow, every time someone 
+                    makes a change to the project (for example, updating code or editing docs), the system 
+                    automatically integrates that change into a shared repository and runs a series of checks. 
+                    These checks might include compiling code, running unit tests, validating formatting, or 
+                    building a preview of the documentation site. The goal of continuous integration (CI) is to 
+                    catch errors early, keep the project in a deployable state, and prevent integration conflicts
+                     between contributors.</p>
 
-            <p>...</p>
+                <p>Continuous deployment (or delivery) extends this process by automating what happens after the 
+                    checks pass. In continuous delivery, the system prepares the latest successful build for 
+                    release, allowing a human to approve the final deployment. In continuous deployment, the 
+                    process goes a step further—automatically pushing the approved changes to production once 
+                    they meet all criteria. This means updates, whether to software features or documentation, 
+                    can reach users within minutes instead of days or weeks.</p>
 
-            <p>...</p>
+                <p>In the context of Docs as Code, a CI/CD pipeline ensures that documentation is always up to 
+                    date, tested, and published automatically when changes are merged. For example, a pipeline 
+                    might check Markdown files for broken links, enforce style consistency, and then build a 
+                    static site using tools like MkDocs or Sphinx. Once the tests pass, the system can deploy 
+                    the updated site to a live server such as GitHub Pages or Netlify. This automation removes 
+                    manual steps, reduces human error, and creates a predictable, repeatable process for 
+                    delivering clear and accurate documentation.</p>
 
             <h2 id="C4">Implementation</h2>
 
-            <!-- Should these smaller sections be headings? i.e. h3 or h4-->
+                <h3>Implement Docs as Code for Your Business Group</h3>
+                    <p>You’ve decided to use Git and GitHub to get and keep your docs organized and up to date. Now what? This
+                    step-by-step breakdown will help you implement the changes necessary to get your team documentation
+                    streamlined
+                    with only one source of truth.
+                    </p>
 
-            <p><b>Implement Docs as Code for Your Business Group</b>
-                <br>
-                You’ve decided to use Git and GitHub to get and keep your docs organized and up to date. Now what? This
-                step-by-step breakdown will help you implement the changes necessary to get your team documentation
-                streamlined
-                with only one source of truth.
-            </p>
+                <h3>Define Document Needs and Goals</h3>
+                    <p>Defining your needs and goals is perhaps the most important step of this process. 
+                        What types of documentation are necessary  for your team? SOPs? RFPs? How-To Guides? 
+                        This will differ for every  business, but a clear list of all types of documentation 
+                        required by your team should be your starting point. Make a list of each of these so you 
+                        can categorize them.</p>
 
-            <p><b>Define document needs and goals</b>
-                <br>
-                ...
-            </p>
+                <h3>Categorize Documentation</h3>
+                    <p>When you create your repository, you want to make it as simple as possible for your team to 
+                        find the document they’re looking for. Should policy documents be in the same file location 
+                        as your How-To tutorials? Likely not. A simple and direct file structure is of paramount 
+                        importance. Your list of document types is a great place to start.</p>
 
-            <p><b>Categorize documentation</b>
-                <br>
-                ...
-            </p>
+                <h3>Determine Document Format</h3>
+                    <p>You should select the format that works best for your team. HTML & CSS are also easy to 
+                        learn and great for creating a simple docs site. Your docs repository is meant to be a 
+                        bridge between developers and various administrators/teams, so make sure you choose a 
+                        format that everyone can use or learn easily.</p>    
 
-            <p>[TBD - insert example of good file structure that is generic versus bad file structure]</p>
+                <h3>Download Git, GitHub and Visual Studio Code on Your Office Computer</h3>
+                    <p>As the owner of the project, you’ll be setting up the team’s document repository. 
+                        That comes at a later step. First, you must download the programs needed.</p>
 
+                    <ul>
+                        <li>Git: <a href="https://git-scm.com/install/" target="_blank">download it here</a></li>
+                        <li>GitHub: <a href="https://desktop.github.com/download/" target="_blank">download it here</a></li>
+                        <li>VSC: <a href="https://code.visualstudio.com/download" target="_blank">download it here</a></li>
+                    </ul>
 
-            <p><b>Determine document format</b>
-                <br>
-                ...
-            </p>
+                <h3>Create a Docs Repository</h3>
+                    <p>Your next task is to get started with Git and GitHub. We won’t go through each step here. 
+                        Please jump to our <a href="gitexercises.html">Git</a> and <a href="githubexercises.html">GitHub</a> 
+                        tutorial pages for instructions on how to download and use both programs.</p>
 
-            <p><b>Download Git, GitHub and Visual Studio Code on your office computer</b>
-                <br>
-                ...
-            </p>
+                <h3>Select Site Generator</h3>
+                    <p>You’ve created your repository. Now you need to select a single site generator to host 
+                        your site. GitHub allows for free publishing to their own site, GitPages. This is a 
+                        great option for simple sites. Mkdocs [insert link] is an option that may be preferable 
+                        if you plan to store a large volume of files or a complex file structure. See our 
+                        <a href="resources.html">Resources</a> page for more options.</p>
 
-            <ul>
-                <li>Git: <a href="https://git-scm.com/install/" target="_blank">download it here</a></li>
-                <li>GitHub: <a href="https://desktop.github.com/download/" target="_blank">download it here</a></li>
-                <li>VSC: <a href="https://code.visualstudio.com/download" target="_blank">download it here</a></li>
-            </ul>
+                <h3>Add all Existing Documentation (That You'll Keep) to Your Repository.</h3>
+                    <p>If you have an existing file structure, you can “push” this to your GitHub repository. 
+                        Make sure to reorganize your file structure and eliminate and defunct content first so 
+                        that you’re starting with a functional system.</p>
 
-            <p><b>Create a docs repository</b>
-                <br>
-                ...
-            </p>
+                <!--<p>[tutorial on pushing existing file structure to GitHub repository? link? TBD]</p>-->
 
-            <p><b>Select site generator (potentially GitPages? - TBD)</b>
-                <br>
-                ...
-            </p>
+                <h3>Review Documentation for Accuracy and Update as Needed.</h3>
+                    <p>Git will now be tracking your changes. Clone your repository [insert link to exercise] 
+                        onto your computer and make changes locally. Then push those changes back to the main 
+                        repository. Create a branch [insert link to exercise] if you want to keep the original 
+                        document intact. You can make changes in a branch without changing the original document 
+                        and only merge the two if your changes are approved.</p>    
 
-            <p><b>Add all existing documentation (that you'll keep) to your repository.</b>
-                <br>
-                ...
-            </p>
-
-            <p>[tutorial on pushing existing file structure to GitHub repository? link? TBD]</p>
-
-            <p><b>Review documentation for accuracy and update as needed.</b>
-                <br>
-                ...
-            </p>
-
-            <p><b>Download Git, GitHub, and/or Visual Studio Code on all staff computers.</b>
-                <br>
-                ...
-            </p>
+                <h3>Download Git, GitHub, and/or Visual Studio Code on all Staff Computers.</h3>
+                    <p>Direct appropriate staff to download Git and GitHub (and Visual Studio Code, if necessary) 
+                        so all appropriate team members have access to edit and add documents to your repository. </p>
 
             <p>Next, <a href="githubexercises.html">GitHub practice exercises.</a></p>
         </div>
