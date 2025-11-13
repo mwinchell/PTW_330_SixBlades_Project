@@ -2125,7 +2125,7 @@ pre, code, .listingblock, .literalblock {
   #content, #header, #footer, body, #content > *, #footer > *, body > * {
     width: auto !important;
     max-width: auto !important;
-    margin: 0 0 !important;
+    margin: 0 0 0.25em !important;
     padding: 0.5em 0 !important;
     box-sizing: border-box !important;
     display: block !important;
