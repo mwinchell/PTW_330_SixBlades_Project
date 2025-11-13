@@ -2143,7 +2143,7 @@ pre, code, .listingblock, .literalblock {
     width: auto !important;
     max-width: auto !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 15 !important;
     box-sizing: border-box !important;
   }
 
