@@ -77,6 +77,8 @@ position:fixed;top:0;left:0;z-index:100;">
         </div>
         <div id="content">
 
+            <h1>Git Exercises</h1>
+
             <div>
                 <h2>Quick Links</h2>
                 <ul>
@@ -96,8 +98,6 @@ position:fixed;top:0;left:0;z-index:100;">
                     <li><a href="#C14">Exercise 9: Delete a Commit</a></li>
                 </ul>
             </div>
-
-            <h1>Git Exercises</h1>
 
                 <p>While GitHub is a hosting platform for Git repositories, Git is a that can be installed 
                     locally to track changes to files, can be used offline, and does not require hosting 
@@ -139,7 +139,8 @@ position:fixed;top:0;left:0;z-index:100;">
                     <p>This action will create an invisible .git file within the `git-practice` folder,
                         where versions and metadata will be stored.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%201.4%20Create%20Practice%20Folder.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%201.4%20Create%20Practice%20Folder.png?raw=true"
+                    alt="Exercise 1 image displaying code that mkdir git-practice was initialized, changed directory to git-practice, and initialized empty Git repository.">
                     <br>
                     <br>
 
@@ -184,7 +185,8 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p>`git commit` saves a snapshot of the file and `-m` lets you add a description of the change.
                         In this case, the message is "Initial commit with README".</p>
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%202.5%20Create%20Practice%20File.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%202.5%20Create%20Practice%20File.png?raw=true"
+                    alt="Exercise 2 image displaying code that a heading was added to the README.md file and was committed.">
                 </ol>
 
             <h2 id="C8">Exercise 3: Changing a File</h2>
@@ -210,9 +212,9 @@ position:fixed;top:0;left:0;z-index:100;">
                     <p>`echo` is used to output text, in this case writing the content "This Is A Test" 
                         as a title header (#) into a file named README.md.</p>
 
-                    <p>`>>` serves to amend the file, as opposed to `>`, which will overwrite</p>
+                    <p>`>>` serves to amend the file, as opposed to `>`, which will overwrite.</p>
 
-                    <p>Your markdown file will now include the subheading “My First Subheading”</p>
+                    <p>Your markdown file will now include the subheading “My First Subheading”.</p>
 
                     <li>Type `git add README.md` and hit enter</li>
                     <br>
@@ -225,7 +227,8 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p>`git commit` saves a snapshot of the file and `-m` allows you to add a description of the change.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.5%20Added%20a%20subheading.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.5%20Added%20a%20subheading.png?raw=true"
+                    alt="Exercise 3 image displaying code that a subheading was added to the READEME.md file.">
                     <br>
                     <br>
                 </ol>
@@ -252,7 +255,7 @@ position:fixed;top:0;left:0;z-index:100;">
                     <li>Type `git checkout -b branch-readme`</li>
                     <br>
 
-                    <p><i>Note: `git checkout` is used to switch branches while `-b` tells Git to create a new branch named "branch-readme".</i></p>
+                    <p>`git checkout` is used to switch branches while `-b` tells Git to create a new branch named "branch-readme".</p>
 
                     <li>Type `echo "- This is a practice branch" >> README.md` and hit enter</li>
                     <br>
@@ -272,6 +275,7 @@ position:fixed;top:0;left:0;z-index:100;">
                     <p>`git commit` saves a snapshot of the file and `-m` allows you to add a description of the change.</p>
 
                     <li>Type `git checkout main` and hit enter</li>
+                    <br>
 
                     <p>This will switch back to main branch.</p>
                     
@@ -286,7 +290,8 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p>The new line from your branch will no longer be visible in your markdown file.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%204.8%20Create%20Practice%20Branch.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%204.8%20Create%20Practice%20Branch.png?raw=true"
+                    alt="Exercise 4 image displaying code that a branch was added and committed. Git diff is also initialized and used to check differences between main and practice branches.">
                     <br>
                     <br>
 
@@ -319,10 +324,10 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p><i>Note: if `main` returns an error, try `master` instead.</i></p>
 
-                    <li>Type `git merge branch-readme` and hit ente</li>
+                    <li>Type `git merge branch-readme` and hit enter</li>
                     <br>
 
-                    <p>This will combine changes from the branch file into the main file</p>
+                    <p>This will combine changes from the branch file into the main file.</p>
 
                     <p>If you’re following from the last exercise, your markdown file will now include the line “
                         - This is a practice branch”.</p>
@@ -330,7 +335,8 @@ position:fixed;top:0;left:0;z-index:100;">
                     <li>Type `cat README.md` to see your changes in Git</li>
                     <br>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%205.5%20Merging%20Branches.png?raw=true">"
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%205.5%20Merging%20Branches.png?raw=true"
+                    alt="Exercise 5 image displaying that changed have been made to the file on the main branch.">
                 </ol>
 
             <h2 id="C11">Exercise 6: Revise in Markdown Editor</h2>
@@ -366,7 +372,7 @@ position:fixed;top:0;left:0;z-index:100;">
                     <li>Type `git status` and hit enter</li>
                     <br>
 
-                    <p>This will show that Git sees the change, but the change is not being tracked</p>
+                    <p>This will show that Git sees the change, but the change is not being tracked.</p>
 
                     <li>Type `git add README.md` and hit enter</li>
                     <br>
@@ -379,7 +385,8 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p>`git commit` saves a snapshot of the file and `-m` allows you to add a description of the change.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%206.7%20Revising%20in%20Mardown%20Editor.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%206.7%20Revising%20in%20Mardown%20Editor.png?raw=true"
+                    alt="Exercise 6 image displaying that a snapshot of the file has been saved. And that the changes were made in a markdown editor.">
                 </ol>
 
             <h2 id="C12">Exercise 7: View Commit History</h2>
@@ -407,14 +414,16 @@ position:fixed;top:0;left:0;z-index:100;">
 
                     <p>This will show a compact list of commits, with minimal details.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.3%20Compact%20Commit%20List.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%203.3%20Compact%20Commit%20List.png?raw=true"
+                    alt="Exercise 7 image, step 3: terminal displays a compact list of commits.">
                     
                     <li>Type `git log` and hit enter</li>
                     <br>
 
                     <p>This will show a complete list of commits, with full details</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%207.4%20Complete%20Commit%20List.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%207.4%20Complete%20Commit%20List.png?raw=true"
+                    alt="Exercise 7 image, step 4: terminal displays a complete list of edits made to the file.">
                 </ol>
 
             <h2 id="C13">Exercise 8: Revising a Commit Message</h2>
@@ -480,7 +489,8 @@ position:fixed;top:0;left:0;z-index:100;">
                         change. The message on your Git commit has now been changed. The content "This line is a 
                         mistake" is still in the markdown file.</p>
 
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%208.9%20Revising%20a%20Commit%20Message.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%208.9%20Revising%20a%20Commit%20Message.png?raw=true"
+                    alt="Exercise 8 image displaying that a commit was made, the change was unstaged, and the commit message was revised.">
                 </ol>
 
             <h2 id="C14">Exercise 9: Delete a Commit</h2>
@@ -508,7 +518,7 @@ position:fixed;top:0;left:0;z-index:100;">
                     <p>`echo` is used to output text, in this case writing the content "This line is a mistake" 
                         into a file named README.md.</p>
                     
-                    <p>`>>` serves to amend the file, as opposed to `>`, which will overwrite</p>
+                    <p>`>>` serves to amend the file, as opposed to `>`, which will overwrite.</p>
 
                     <li>Type `git add README.md` and hit enter</li>
                     <br>
@@ -535,11 +545,12 @@ position:fixed;top:0;left:0;z-index:100;">
                     <li>Type `cat README.md` and hit enter to view your Git versions</li>
                     <br>
                     
-                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%209.8%20Deleting%20a%20Commit.png?raw=true">
+                    <img src="https://github.com/mwinchell/PTW_330_SixBlades_Project/blob/main/images/Git%20Ex%209.8%20Deleting%20a%20Commit.png?raw=true"
+                    alt="Exercise 9 image displaying that a commit was deleted.">
                 </ol>
 
-            <p><i><b>Note</b></i>: after completing any or all of these Git exercises on your computer,
-                you can get rid of the folder, markdown file, and hidden .git file by deleting the git-practice folder.</p>
+            <p><i>Note: after completing any or all of these Git exercises on your computer,
+                you can get rid of the folder, markdown file, and hidden .git file by deleting the git-practice folder.</i></p>
 
             <p>Next, <a href="resources.html">Resources</a></p>
         </div>
